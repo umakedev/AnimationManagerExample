@@ -91,16 +91,9 @@ struct AnimationManager {
     
     struct View {
         let basic: Basic
-        private weak var view: UIView?
         
         init(view: UIView) {
-            self.view = view
             self.basic = Basic(view: view)
-        }
-        
-        func removeAllAnimations()
-        {
-            view?.pop_removeAllAnimations()
         }
         
         class Basic: BasicAnimation
@@ -126,56 +119,8 @@ struct AnimationManager {
         let basic: Basic
         let spring: Spring
         
-        enum TransitionFrom
-        {
-            case top
-            case bottom
-            case left
-            case right
-            
-            func function() -> String
-            {
-                switch self {
-                case .top:
-                    return kCATransitionFromTop
-                case .bottom:
-                    return kCATransitionFromBottom
-                case .left:
-                    return kCATransitionFromLeft
-                case .right:
-                    return kCATransitionFromRight
-                }
-                
-            }
-        }
-        
-        enum Transition
-        {
-            case fade
-            case push
-            case moveIn
-            case reveal
-            
-            func function() -> String
-            {
-                switch self {
-                case .fade:
-                    return kCATransitionFade
-                case .push:
-                    return kCATransitionPush
-                case .moveIn:
-                    return kCATransitionMoveIn
-                case .reveal:
-                    return kCATransitionReveal
-                }
-                
-            }
-        }
-        
-        private weak var layer: CALayer?
         init(layer: CALayer)
         {
-            self.layer = layer
             self.basic = Basic(layer: layer)
             self.spring = Spring(layer: layer)
         }
@@ -250,34 +195,6 @@ struct AnimationManager {
                 layer?.pop_removeAnimation(forKey: key)
                 layer?.pop_add(slideLayerAnimation, forKey: nil)
             }
-            
-            func translationY(toValue: CGFloat, beginTime: Double? = nil, dynamicsMass: CGFloat, completion: ((Bool) -> ())? = nil)
-            {
-                let slideLayerAnimation = animation(property: kPOPLayerTranslationY, toValue: toValue, beginTime: beginTime, dynamicsMass: dynamicsMass, completion: completion)
-                
-                let key = "AnimationManager_Spring_TranslationY"
-                layer?.pop_removeAnimation(forKey: key)
-                layer?.pop_add(slideLayerAnimation, forKey: nil)
-            }
-            
-            func translationX(toValue: CGFloat, beginTime: Double? = nil, dynamicsMass: CGFloat, completion: ((Bool) -> ())? = nil)
-            {
-                let slideLayerAnimation = animation(property: kPOPLayerTranslationX, toValue: toValue, beginTime: beginTime, dynamicsMass: dynamicsMass, completion: completion)
-                
-                let key = "AnimationManager_Spring_TranslationX"
-                layer?.pop_removeAnimation(forKey: key)
-                layer?.pop_add(slideLayerAnimation, forKey: nil)
-            }
-        }
-        
-        func transition(type: Transition, from: TransitionFrom, duration: Duration = .defaultDuration, beginTime: Double? = nil, timingFunctionType: TimingFunctionType = .defaultType, completion: ((Bool) -> ())? = nil)
-        {
-            let animation: CATransition = CATransition()
-            animation.timingFunction = timingFunctionType.function()
-            animation.type = type.function()
-            animation.subtype = from.function()
-            animation.duration = duration.rawValue
-            layer?.add(animation, forKey: nil)
         }
     }
     
@@ -306,29 +223,6 @@ struct AnimationManager {
                 self.constraint?.pop_add(setConstantAnimation, forKey: key)
             }
         }
-    }
-    
-    struct ImageView
-    {
-        private weak var imageView: UIImageView?
-        init(imageView: UIImageView)
-        {
-            self.imageView = imageView
-        }
-        
-        func set(image: UIImage?, duration: Duration = .defaultDuration) {
-            imageView?.image = image
-            
-            let transition = CATransition()
-            transition.duration = duration.rawValue
-            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            transition.type = kCATransitionFade;
-            
-            imageView?.layer.add(transition, forKey: nil);
-            
-        }
-        
-        
     }
 }
 

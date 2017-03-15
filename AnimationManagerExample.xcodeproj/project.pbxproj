@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51C0C4DB7E64F4A2BBD3A2CE /* Pods_AnimationManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A51B88E5AB466FD0C1DF5C /* Pods_AnimationManagerExample.framework */; };
-		985D45031E6F34C6000B5A56 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D45021E6F34C6000B5A56 /* AnimationManager.swift */; };
+		985D45051E6F48F3000B5A56 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D45041E6F48F3000B5A56 /* AnimationManager.swift */; };
 		989674651E5E06370057546B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989674641E5E06370057546B /* AppDelegate.swift */; };
 		989674671E5E06370057546B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989674661E5E06370057546B /* ViewController.swift */; };
 		9896746A1E5E06370057546B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989674681E5E06370057546B /* Main.storyboard */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		48E4EB3FF484C7AC2BEADF99 /* Pods-AnimationManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationManagerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationManagerExample/Pods-AnimationManagerExample.release.xcconfig"; sourceTree = "<group>"; };
-		985D45021E6F34C6000B5A56 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		985D45041E6F48F3000B5A56 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		989674611E5E06370057546B /* AnimationManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989674641E5E06370057546B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989674661E5E06370057546B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +27,6 @@
 		9896746B1E5E06370057546B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9896746E1E5E06370057546B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		989674701E5E06370057546B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		989674761E5E06470057546B /* AnimationManager.old.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.old.swift; sourceTree = "<group>"; };
 		989674781E5E097C0057546B /* TopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuViewController.swift; sourceTree = "<group>"; };
 		99A51B88E5AB466FD0C1DF5C /* Pods_AnimationManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F764F835C013D3F7933AC124 /* Pods-AnimationManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationManagerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationManagerExample/Pods-AnimationManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +64,6 @@
 		989674581E5E06370057546B = {
 			isa = PBXGroup;
 			children = (
-				985D45021E6F34C6000B5A56 /* AnimationManager.swift */,
-				989674761E5E06470057546B /* AnimationManager.old.swift */,
 				989674631E5E06370057546B /* AnimationManagerExample */,
 				989674621E5E06370057546B /* Products */,
 				65D20F0267A9590C855DC1FD /* Pods */,
@@ -86,9 +83,10 @@
 			isa = PBXGroup;
 			children = (
 				989674641E5E06370057546B /* AppDelegate.swift */,
-				989674661E5E06370057546B /* ViewController.swift */,
 				989674681E5E06370057546B /* Main.storyboard */,
+				989674661E5E06370057546B /* ViewController.swift */,
 				989674781E5E097C0057546B /* TopMenuViewController.swift */,
+				985D45041E6F48F3000B5A56 /* AnimationManager.swift */,
 				9896746B1E5E06370057546B /* Assets.xcassets */,
 				9896746D1E5E06370057546B /* LaunchScreen.storyboard */,
 				989674701E5E06370057546B /* Info.plist */,
@@ -220,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				985D45031E6F34C6000B5A56 /* AnimationManager.swift in Sources */,
+				985D45051E6F48F3000B5A56 /* AnimationManager.swift in Sources */,
 				989674791E5E097C0057546B /* TopMenuViewController.swift in Sources */,
 				989674671E5E06370057546B /* ViewController.swift in Sources */,
 				989674651E5E06370057546B /* AppDelegate.swift in Sources */,
