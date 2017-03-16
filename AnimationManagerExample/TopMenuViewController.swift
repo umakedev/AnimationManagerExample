@@ -23,9 +23,20 @@ class TopMenuViewController: UIViewController
     @IBOutlet fileprivate weak var duplicateButton: UIButton!
     @IBOutlet fileprivate weak var backButton: UIButton!
     @IBOutlet fileprivate weak var paletteView: UIView!
+    @IBOutlet fileprivate weak var separatorView: UIView!
     
     private func orderedButtons() -> [UIButton] {
         return [pencilButton, penButton, surfaceButton]
+    }
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        paletteStackViewBackgroundView.backgroundColor = .clear
+        paletteView.backgroundColor = .clear
+        paletteStackViewBackgroundView.layer.borderWidth = 1
+        paletteStackViewBackgroundView.layer.borderColor = separatorView.backgroundColor?.cgColor
     }
     
     override func viewWillAppear(_ animated: Bool)

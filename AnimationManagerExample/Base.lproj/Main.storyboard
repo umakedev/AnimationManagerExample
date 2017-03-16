@@ -98,7 +98,7 @@
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0x0-Ns-ppg" userLabel="separator">
                                                 <rect key="frame" x="88" y="0.0" width="1" height="44"/>
-                                                <color key="backgroundColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.56862747670000002" green="0.56862747670000002" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="VHZ-bS-NJ2"/>
                                                 </constraints>
@@ -171,6 +171,7 @@
                         <outlet property="paletteView" destination="US6-j0-bl5" id="9PH-YW-DzL"/>
                         <outlet property="penButton" destination="VS2-67-LQJ" id="lR4-s9-Wlf"/>
                         <outlet property="pencilButton" destination="Bfc-jg-beD" id="tsc-O3-YrH"/>
+                        <outlet property="separatorView" destination="0x0-Ns-ppg" id="59Q-Dr-NZb"/>
                         <outlet property="surfaceButton" destination="1Fv-DV-sP5" id="LAL-EN-hVX"/>
                         <outlet property="wrapperStackView" destination="tqa-8H-GUD" id="G8n-Wi-K5N"/>
                         <outlet property="wrapperStackViewToggleConstraint" destination="3lJ-ek-mnW" id="n0q-By-7lO"/>

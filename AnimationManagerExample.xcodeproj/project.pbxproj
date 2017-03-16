@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51C0C4DB7E64F4A2BBD3A2CE /* Pods_AnimationManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A51B88E5AB466FD0C1DF5C /* Pods_AnimationManagerExample.framework */; };
+		80B99D7CB84D6BA24710D5FE /* Pods_AnimationManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D6EC99ACE492B600CD9F02 /* Pods_AnimationManagerExample.framework */; };
 		985D45051E6F48F3000B5A56 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D45041E6F48F3000B5A56 /* AnimationManager.swift */; };
 		989674651E5E06370057546B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989674641E5E06370057546B /* AppDelegate.swift */; };
 		989674671E5E06370057546B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989674661E5E06370057546B /* ViewController.swift */; };
@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		48E4EB3FF484C7AC2BEADF99 /* Pods-AnimationManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationManagerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationManagerExample/Pods-AnimationManagerExample.release.xcconfig"; sourceTree = "<group>"; };
+		69D6EC99ACE492B600CD9F02 /* Pods_AnimationManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985D45041E6F48F3000B5A56 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		989674611E5E06370057546B /* AnimationManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989674641E5E06370057546B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		9896746E1E5E06370057546B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		989674701E5E06370057546B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		989674781E5E097C0057546B /* TopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuViewController.swift; sourceTree = "<group>"; };
-		99A51B88E5AB466FD0C1DF5C /* Pods_AnimationManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F764F835C013D3F7933AC124 /* Pods-AnimationManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationManagerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationManagerExample/Pods-AnimationManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C0C4DB7E64F4A2BBD3A2CE /* Pods_AnimationManagerExample.framework in Frameworks */,
+				80B99D7CB84D6BA24710D5FE /* Pods_AnimationManagerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		0747082188F028476C993963 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99A51B88E5AB466FD0C1DF5C /* Pods_AnimationManagerExample.framework */,
+				69D6EC99ACE492B600CD9F02 /* Pods_AnimationManagerExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,16 +82,24 @@
 		989674631E5E06370057546B /* AnimationManagerExample */ = {
 			isa = PBXGroup;
 			children = (
-				989674641E5E06370057546B /* AppDelegate.swift */,
+				9896746D1E5E06370057546B /* LaunchScreen.storyboard */,
 				989674681E5E06370057546B /* Main.storyboard */,
 				989674661E5E06370057546B /* ViewController.swift */,
 				989674781E5E097C0057546B /* TopMenuViewController.swift */,
 				985D45041E6F48F3000B5A56 /* AnimationManager.swift */,
-				9896746B1E5E06370057546B /* Assets.xcassets */,
-				9896746D1E5E06370057546B /* LaunchScreen.storyboard */,
-				989674701E5E06370057546B /* Info.plist */,
+				98D3D9A81E7AC2D100D59370 /* Resources */,
 			);
 			path = AnimationManagerExample;
+			sourceTree = "<group>";
+		};
+		98D3D9A81E7AC2D100D59370 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9896746B1E5E06370057546B /* Assets.xcassets */,
+				989674701E5E06370057546B /* Info.plist */,
+				989674641E5E06370057546B /* AppDelegate.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +138,7 @@
 					989674601E5E06370057546B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = P3DK622T9M;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -345,12 +354,15 @@
 			baseConfigurationReference = F764F835C013D3F7933AC124 /* Pods-AnimationManagerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = P3DK622T9M;
 				INFOPLIST_FILE = AnimationManagerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Umake.AnimationManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -360,12 +372,14 @@
 			baseConfigurationReference = 48E4EB3FF484C7AC2BEADF99 /* Pods-AnimationManagerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = P3DK622T9M;
 				INFOPLIST_FILE = AnimationManagerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Umake.AnimationManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

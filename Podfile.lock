@@ -1,18 +1,12 @@
 PODS:
   - pop (1.0.9)
-  - R.swift (3.2.0):
-    - R.swift.Library (~> 3.0.2)
-  - R.swift.Library (3.0.2)
 
 DEPENDENCIES:
   - pop
-  - R.swift
 
 SPEC CHECKSUMS:
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  R.swift: 207a372a2b5977caef440c696a368009460641d1
-  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
 
-PODFILE CHECKSUM: 8c48c41e8ea0f17ad58f24221f02c94e3c629655
+PODFILE CHECKSUM: 08e5297f83e0e6e35b9c1fe14eac6626200dd374
 
 COCOAPODS: 1.2.0
